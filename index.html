@@ -1,46 +1,51 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Department of Computer Science - XYZ University">
-    <title>Department of Computer Science | XYZ University</title>
 
-```
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
-```
+    <title>Grandstone University | Admissions Open</title>
 
+    <meta name="description" content="Explore programs, campus life and admissions at Grandstone University.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-```
+<!-- TOP ANNOUNCEMENT -->
+<div class="top-bar">
+    <p>🎓 Admissions Open 2027 | Apply Now for Your Future</p>
+    <a href="#admission">Apply Now →</a>
+</div>
+
 <!-- HEADER -->
-<header>
+<header class="header">
     <div class="container navbar">
 
         <a href="#home" class="logo">
-            CS<span> Department</span>
+            <span class="logo-icon">GU</span>
+            <span>
+                <strong>GRANDSTONE</strong>
+                <small>BUILDING KNOWLEDGE. SHAPING FUTURES.</small>
+            </span>
         </a>
 
-        <button id="menuToggle" aria-label="Toggle navigation">
-            ☰
-        </button>
+        <button class="menu-toggle" id="menuToggle">☰</button>
 
         <nav class="nav-links" id="navLinks">
-            <a href="#home" class="active">Home</a>
+            <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#programs">Programs</a>
+            <a href="#campus">Campus Life</a>
             <a href="#faculty">Faculty</a>
-            <a href="#notices">Notices</a>
             <a href="#contact">Contact</a>
-
-            <button id="themeToggle" aria-label="Toggle dark mode">
-                🌙
-            </button>
+            <a href="#admission" class="nav-apply">Apply Now</a>
         </nav>
 
     </div>
@@ -50,346 +55,500 @@
 <!-- HERO SECTION -->
 <section class="hero" id="home">
 
-    <div class="container">
+    <div class="hero-overlay"></div>
 
-        <div class="hero-content">
+    <div class="container hero-content">
 
-            <h1>
-                Department of Computer Science
-            </h1>
+        <span class="hero-tag">WELCOME TO GRANDSTONE UNIVERSITY</span>
 
-            <p>
-                Welcome to the Department of Computer Science at XYZ University.
-                Explore technology, develop innovative ideas, and build your
-                future with quality education and practical learning.
-            </p>
+        <h1>
+            Discover Your Potential.
+            <span>Shape Your Future.</span>
+        </h1>
 
-            <a href="#programs" class="btn">
-                Explore Our Programs →
-            </a>
+        <p>
+            Experience world-class education, innovative learning,
+            modern infrastructure and endless opportunities.
+        </p>
 
+        <div class="hero-buttons">
+            <a href="#admission" class="btn btn-primary">Apply for Admission →</a>
+            <a href="#about" class="btn btn-outline">Explore University</a>
         </div>
 
     </div>
-
 </section>
 
 
-<!-- ABOUT SECTION -->
-<section id="about">
+<!-- QUICK INFORMATION -->
+<section class="quick-info">
+    <div class="container info-grid">
 
-    <div class="container">
+        <div class="info-card">
+            <h2>100+</h2>
+            <p>Programs & Specializations</p>
+        </div>
 
-        <div class="section-title">
-            <h2>About Our Department</h2>
-            <p>Discover our vision, mission and commitment to excellence.</p>
+        <div class="info-card">
+            <h2>Global</h2>
+            <p>Learning Environment</p>
+        </div>
+
+        <div class="info-card">
+            <h2>Modern</h2>
+            <p>Campus Infrastructure</p>
+        </div>
+
+        <div class="info-card">
+            <h2>2027</h2>
+            <p>Admissions Open</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ABOUT UNIVERSITY -->
+<section class="section about-section" id="about">
+
+    <div class="container about-grid">
+
+        <div class="about-image">
+            <img
+                src="https://images.unsplash.com/photo-1562774053-701939374585?w=1000"
+                alt="University campus building">
         </div>
 
         <div class="about-content">
 
-            <div class="about-text">
+            <span class="section-label">ABOUT OUR UNIVERSITY</span>
 
-                <h3>Building Tomorrow's Technology Leaders</h3>
+            <h2>Education That Inspires Excellence</h2>
 
-                <p>
-                    The Department of Computer Science at XYZ University
-                    provides quality education in computer science and
-                    information technology.
-                </p>
+            <p>
+                Grandstone University is an academic project concept focused on
+                academic learning, innovation, research and student development.
+            </p>
 
-                <p>
-                    Our department focuses on programming, software
-                    development, database management, artificial
-                    intelligence and modern computing technologies.
-                </p>
+            <p>
+                Students can explore diverse academic disciplines,
+                participate in campus activities and develop skills
+                for their professional careers.
+            </p>
 
-                <p>
-                    We encourage students to develop technical knowledge,
-                    problem-solving abilities, creativity and professional
-                    skills through practical learning.
-                </p>
+            <a href="#programs" class="text-link">Explore Our Programs →</a>
 
+        </div>
+
+    </div>
+</section>
+
+
+<!-- PROGRAMS -->
+<section class="section programs-section" id="programs">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">ACADEMIC EXCELLENCE</span>
+
+            <h2>Explore Our Programs</h2>
+
+            <p>
+                Choose a program that matches your passion and career goals.
+            </p>
+
+        </div>
+
+        <!-- COURSE FILTERS -->
+        <div class="course-filters">
+
+            <button class="filter-btn active" data-filter="all">All Programs</button>
+
+            <button class="filter-btn" data-filter="engineering">Engineering</button>
+
+            <button class="filter-btn" data-filter="management">Management</button>
+
+            <button class="filter-btn" data-filter="computer">Computer Applications</button>
+
+            <button class="filter-btn" data-filter="science">Science</button>
+
+            <button class="filter-btn" data-filter="arts">Arts & Law</button>
+
+        </div>
+
+
+        <!-- COURSE CARDS -->
+        <div class="course-grid">
+
+            <div class="course-card" data-category="engineering">
+                <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=700" alt="Engineering">
+                <div class="course-content">
+                    <span class="course-category">ENGINEERING</span>
+                    <h3>B.Tech</h3>
+                    <p>Build technical knowledge and engineering skills for future industries.</p>
+                    <p class="duration">Duration: 4 Years</p>
+                    <a href="#admission">Enquire Now →</a>
+                </div>
             </div>
 
-            <div class="about-box">
+            <div class="course-card" data-category="computer">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=700" alt="Computer Applications">
+                <div class="course-content">
+                    <span class="course-category">COMPUTER APPLICATIONS</span>
+                    <h3>BCA</h3>
+                    <p>Learn programming, databases, web development and computer applications.</p>
+                    <p class="duration">Duration: 3 Years</p>
+                    <a href="#admission">Enquire Now →</a>
+                </div>
+            </div>
 
-                <h3>Our Vision</h3>
+            <div class="course-card" data-category="management">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=700" alt="MBA">
+                <div class="course-content">
+                    <span class="course-category">MANAGEMENT</span>
+                    <h3>MBA</h3>
+                    <p>Develop leadership, business strategy and management skills.</p>
+                    <p class="duration">Duration: 2 Years</p>
+                    <a href="#admission">Enquire Now →</a>
+                </div>
+            </div>
 
-                <p>
-                    To become a leading center of computer science education
-                    by developing skilled professionals, encouraging
-                    innovation and creating future technology leaders.
-                </p>
+            <div class="course-card" data-category="computer">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=700" alt="MCA">
+                <div class="course-content">
+                    <span class="course-category">COMPUTER APPLICATIONS</span>
+                    <h3>MCA</h3>
+                    <p>Advance your knowledge in software, computing and technology.</p>
+                    <p class="duration">Duration: 2 Years</p>
+                    <a href="#admission">Enquire Now →</a>
+                </div>
+            </div>
 
+            <div class="course-card" data-category="management">
+                <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=700" alt="BBA">
+                <div class="course-content">
+                    <span class="course-category">MANAGEMENT</span>
+                    <h3>BBA</h3>
+                    <p>Explore business administration, marketing and entrepreneurship.</p>
+                    <p class="duration">Duration: 3 Years</p>
+                    <a href="#admission">Enquire Now →</a>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="science">
+                <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=700" alt="BSc">
+                <div class="course-content">
+                    <span class="course-category">SCIENCE</span>
+                    <h3>B.Sc</h3>
+                    <p>Discover scientific concepts through academic and practical learning.</p>
+                    <p class="duration">Duration: 3 Years</p>
+                    <a href="#admission">Enquire Now →</a>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="arts">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=700" alt="Arts">
+                <div class="course-content">
+                    <span class="course-category">ARTS</span>
+                    <h3>BA</h3>
+                    <p>Explore humanities, communication and social sciences.</p>
+                    <p class="duration">Duration: 3 Years</p>
+                    <a href="#admission">Enquire Now →</a>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="arts">
+                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=700" alt="Law">
+                <div class="course-content">
+                    <span class="course-category">LAW</span>
+                    <h3>LLB</h3>
+                    <p>Study legal systems, justice and professional legal practice.</p>
+                    <p class="duration">Duration: 3 Years</p>
+                    <a href="#admission">Enquire Now →</a>
+                </div>
             </div>
 
         </div>
 
     </div>
-
 </section>
 
 
-<!-- PROGRAMS SECTION -->
-<section class="programs" id="programs">
+<!-- ADMISSION SECTION -->
+<section class="admission-section" id="admission">
 
-    <div class="container">
+    <div class="container admission-grid">
 
-        <div class="section-title">
-            <h2>Academic Programs</h2>
-            <p>Choose the right program to build your career in technology.</p>
-        </div>
+        <div class="admission-content">
 
-        <div class="program-grid">
+            <span class="section-label">YOUR FUTURE STARTS HERE</span>
 
-            <div class="program-card">
-                <h3>BCA</h3>
-                <p>
-                    Bachelor of Computer Applications focuses on
-                    programming, databases and computer applications.
-                </p>
-            </div>
+            <h2>Admissions Open 2027</h2>
 
-            <div class="program-card">
-                <h3>MCA</h3>
-                <p>
-                    Master of Computer Applications develops advanced
-                    knowledge of software and computing technologies.
-                </p>
-            </div>
+            <p>
+                Take the first step towards your dream career.
+                Explore academic opportunities and submit your enquiry.
+            </p>
 
-            <div class="program-card">
-                <h3>B.Tech CS</h3>
-                <p>
-                    Computer Science Engineering provides knowledge
-                    of software, hardware and modern technologies.
-                </p>
-            </div>
-
-            <div class="program-card">
-                <h3>M.Tech CS</h3>
-                <p>
-                    Advanced postgraduate program focusing on research,
-                    development and specialized computing skills.
-                </p>
-            </div>
+            <ul>
+                <li>✓ Multiple academic programs</li>
+                <li>✓ Modern learning environment</li>
+                <li>✓ Student development opportunities</li>
+                <li>✓ Career-focused education</li>
+            </ul>
 
         </div>
 
-    </div>
 
-</section>
+        <!-- ADMISSION FORM -->
+        <div class="admission-form-box">
 
+            <h3>Register Your Interest</h3>
 
-<!-- FACULTY SECTION -->
-<section id="faculty">
+            <p>Fill in your details to submit an admission enquiry.</p>
 
-    <div class="container">
-
-        <div class="section-title">
-            <h2>Our Faculty Members</h2>
-            <p>Meet our experienced and dedicated academic team.</p>
-        </div>
-
-        <div class="faculty-grid">
-
-            <div class="faculty-card">
-
-                <img
-                    src="https://placehold.co/150x150/155eef/ffffff?text=AS"
-                    alt="Dr. Amit Sharma">
-
-                <h3>Dr. Amit Sharma</h3>
-
-                <p>Artificial Intelligence</p>
-
-            </div>
-
-
-            <div class="faculty-card">
-
-                <img
-                    src="https://placehold.co/150x150/155eef/ffffff?text=NV"
-                    alt="Dr. Neha Verma">
-
-                <h3>Dr. Neha Verma</h3>
-
-                <p>Data Science</p>
-
-            </div>
-
-
-            <div class="faculty-card">
-
-                <img
-                    src="https://placehold.co/150x150/155eef/ffffff?text=RS"
-                    alt="Mr. Rahul Singh">
-
-                <h3>Mr. Rahul Singh</h3>
-
-                <p>Computer Networks</p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- NOTICES SECTION -->
-<section class="notices" id="notices">
-
-    <div class="container">
-
-        <div class="section-title">
-            <h2>Latest Notices & Announcements</h2>
-            <p>Stay updated with department activities and announcements.</p>
-        </div>
-
-        <div class="notice-list">
-
-            <div class="notice-item">
-
-                <h3>📢 Admission Open</h3>
-
-                <p>
-                    Applications are invited for admission to various
-                    Computer Science programs.
-                </p>
-
-            </div>
-
-
-            <div class="notice-item">
-
-                <h3>💻 Technical Workshop</h3>
-
-                <p>
-                    A technical workshop on modern computer technologies
-                    will be organized by the department.
-                </p>
-
-            </div>
-
-
-            <div class="notice-item">
-
-                <h3>🎓 Student Development Program</h3>
-
-                <p>
-                    Students are encouraged to participate in academic
-                    activities, seminars and skill development programs.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- CONTACT SECTION -->
-<section id="contact">
-
-    <div class="container">
-
-        <div class="section-title">
-            <h2>Contact Our Department</h2>
-            <p>Have questions? Get in touch with our department.</p>
-        </div>
-
-        <div class="contact-content">
-
-            <div class="contact-info">
-
-                <h3>Get In Touch</h3>
-
-                <p>
-                    📍 XYZ University, Jaipur, Rajasthan, India
-                </p>
-
-                <p>
-                    📧 cs@xyzuniversity.edu
-                </p>
-
-                <p>
-                    🏛 Department of Computer Science
-                </p>
-
-                <p>
-                    🕒 Monday - Saturday
-                </p>
-
-            </div>
-
-
-            <form class="contact-form" id="contactForm">
+            <form id="admissionForm">
 
                 <input
                     type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Your Full Name"
+                    id="studentName"
+                    placeholder="Full Name"
                     required>
 
                 <input
                     type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Your Email Address"
+                    id="studentEmail"
+                    placeholder="Email Address"
                     required>
 
                 <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    placeholder="Subject"
+                    type="tel"
+                    id="studentPhone"
+                    placeholder="Mobile Number"
+                    pattern="[0-9]{10}"
+                    maxlength="10"
                     required>
 
-                <textarea
-                    id="message"
-                    name="message"
-                    placeholder="Write Your Message"
-                    required></textarea>
+                <select id="studentCourse" required>
 
-                <button type="submit">
-                    Send Message →
+                    <option value="">Select Your Program</option>
+
+                    <option>B.Tech</option>
+                    <option>BCA</option>
+                    <option>MCA</option>
+                    <option>MBA</option>
+                    <option>BBA</option>
+                    <option>B.Sc</option>
+                    <option>BA</option>
+                    <option>LLB</option>
+
+                </select>
+
+                <select id="studentQualification" required>
+
+                    <option value="">Select Qualification</option>
+                    <option>Class 10th</option>
+                    <option>Class 12th</option>
+                    <option>Graduation</option>
+                    <option>Post Graduation</option>
+
+                </select>
+
+                <button type="submit" class="btn btn-primary form-submit">
+                    Submit Admission Enquiry →
                 </button>
 
-                <p id="formFeedback" class="form-feedback"></p>
+                <div id="admissionMessage"></div>
 
             </form>
 
         </div>
 
     </div>
+</section>
 
+
+<!-- CAMPUS LIFE -->
+<section class="section campus-section" id="campus">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">LIFE AT UNIVERSITY</span>
+
+            <h2>Experience Campus Life</h2>
+
+            <p>
+                Learning goes beyond classrooms. Explore a vibrant student environment.
+            </p>
+
+        </div>
+
+        <div class="campus-grid">
+
+            <div class="campus-card">
+                <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=800" alt="Campus">
+                <h3>Modern Campus</h3>
+            </div>
+
+            <div class="campus-card">
+                <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=800" alt="Library">
+                <h3>University Library</h3>
+            </div>
+
+            <div class="campus-card">
+                <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800" alt="Students">
+                <h3>Student Activities</h3>
+            </div>
+
+            <div class="campus-card">
+                <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800" alt="Sports">
+                <h3>Sports & Fitness</h3>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FACULTY -->
+<section class="section faculty-section" id="faculty">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">OUR ACADEMIC TEAM</span>
+
+            <h2>Meet Our Faculty</h2>
+
+            <p>
+                Learn from experienced educators and academic professionals.
+            </p>
+
+        </div>
+
+        <div class="faculty-grid">
+
+            <div class="faculty-card">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500" alt="Faculty member">
+                <h3>Dr. Academic Faculty</h3>
+                <p>Computer Science</p>
+            </div>
+
+            <div class="faculty-card">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500" alt="Faculty member">
+                <h3>Dr. Academic Faculty</h3>
+                <p>Management Studies</p>
+            </div>
+
+            <div class="faculty-card">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500" alt="Faculty member">
+                <h3>Dr. Academic Faculty</h3>
+                <p>Engineering</p>
+            </div>
+
+        </div>
+
+        <p class="demo-note">
+            Faculty profiles shown here are illustrative demo content.
+        </p>
+
+    </div>
+</section>
+
+
+<!-- CONTACT -->
+<section class="section contact-section" id="contact">
+
+    <div class="container contact-grid">
+
+        <div>
+
+            <span class="section-label">GET IN TOUCH</span>
+
+            <h2>Connect With Us</h2>
+
+            <p>
+                Have questions about academic programs or admission enquiries?
+                Reach out through the details below.
+            </p>
+
+            <div class="contact-detail">
+                <strong>📍 University Location</strong>
+                <p>India</p>
+            </div>
+
+            <div class="contact-detail">
+                <strong>🌐 University Website</strong>
+                <p>Grandstone University Demo</p>
+            </div>
+
+        </div>
+
+
+        <div class="contact-box">
+
+            <h3>Quick Enquiry</h3>
+
+            <p>Submit your enquiry through our admission form.</p>
+
+            <a href="#admission" class="btn btn-primary">
+                Enquire Now →
+            </a>
+
+        </div>
+
+    </div>
 </section>
 
 
 <!-- FOOTER -->
-<footer>
+<footer class="footer">
 
-    <div class="container">
+    <div class="container footer-grid">
 
-        <p>
-            © <span id="year"></span>
-            Department of Computer Science, XYZ University.
-            All Rights Reserved.
-        </p>
+        <div class="footer-brand">
 
-        <p>
-            Designed for Education | Innovation | Technology
-        </p>
+            <h2>GRANDSTONE UNIVERSITY</h2>
+
+            <p>
+                Inspiring minds, empowering students and creating
+                opportunities through education.
+            </p>
+
+        </div>
+
+        <div>
+            <h3>Quick Links</h3>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#programs">Programs</a>
+            <a href="#campus">Campus Life</a>
+        </div>
+
+        <div>
+            <h3>Admissions</h3>
+            <a href="#admission">Apply Now</a>
+            <a href="#programs">Explore Courses</a>
+            <a href="#contact">Contact</a>
+        </div>
 
     </div>
 
+    <div class="footer-bottom">
+        <p>© <span id="year"></span> GU University Website Demo. Academic Project.</p>
+        <p>Not an official university website.</p>
+    </div>
+
 </footer>
-```
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
