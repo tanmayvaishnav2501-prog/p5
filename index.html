@@ -1,97 +1,395 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
+
 <head>
-    <title>Department of Computer Science</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Department of Computer Science - XYZ University">
+    <title>Department of Computer Science | XYZ University</title>
+
+```
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+```
+
 </head>
 
 <body>
 
-    <center>
+```
+<!-- HEADER -->
+<header>
+    <div class="container navbar">
 
-        <h1>Department of Computer Science</h1>
+        <a href="#home" class="logo">
+            CS<span> Department</span>
+        </a>
 
-        <h3>XYZ University</h3>
+        <button id="menuToggle" aria-label="Toggle navigation">
+            ☰
+        </button>
 
-        <hr>
+        <nav class="nav-links" id="navLinks">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#programs">Programs</a>
+            <a href="#faculty">Faculty</a>
+            <a href="#notices">Notices</a>
+            <a href="#contact">Contact</a>
 
-        <a href="#">Home</a> |
-        <a href="#">About Department</a> |
-        <a href="#">Faculty</a> |
-        <a href="#">Courses</a> |
-        <a href="#">Contact</a>
+            <button id="themeToggle" aria-label="Toggle dark mode">
+                🌙
+            </button>
+        </nav>
 
-        <hr>
+    </div>
+</header>
 
-    </center>
 
-    <h2>Welcome to the Department</h2>
+<!-- HERO SECTION -->
+<section class="hero" id="home">
 
-    <p>
-        The Department of Computer Science provides quality education
-        and develops technical and problem-solving skills among students.
-    </p>
+    <div class="container">
 
-    <h2>Programs Offered</h2>
+        <div class="hero-content">
 
-    <ul>
-        <li>BCA</li>
-        <li>MCA</li>
-        <li>B.Tech Computer Science</li>
-        <li>M.Tech Computer Science</li>
-    </ul>
+            <h1>
+                Department of Computer Science
+            </h1>
 
-    <h2>Faculty Members</h2>
+            <p>
+                Welcome to the Department of Computer Science at XYZ University.
+                Explore technology, develop innovative ideas, and build your
+                future with quality education and practical learning.
+            </p>
 
-    <table border="1">
+            <a href="#programs" class="btn">
+                Explore Our Programs →
+            </a>
 
-        <tr>
-            <th>Name</th>
-            <th>Designation</th>
-            <th>Specialization</th>
-        </tr>
+        </div>
 
-        <tr>
-            <td>Dr. Amit Sharma</td>
-            <td>Professor</td>
-            <td>Artificial Intelligence</td>
-        </tr>
+    </div>
 
-        <tr>
-            <td>Dr. Neha Verma</td>
-            <td>Associate Professor</td>
-            <td>Data Science</td>
-        </tr>
+</section>
 
-        <tr>
-            <td>Mr. Rahul Singh</td>
-            <td>Assistant Professor</td>
-            <td>Computer Networks</td>
-        </tr>
 
-    </table>
+<!-- ABOUT SECTION -->
+<section id="about">
 
-    <h2>Important Notice</h2>
+    <div class="container">
 
-    <ol>
-        <li>Mid-term examinations will begin from 15 September.</li>
-        <li>Students must submit their assignments before the deadline.</li>
-        <li>Registration for the seminar is now open.</li>
-    </ol>
+        <div class="section-title">
+            <h2>About Our Department</h2>
+            <p>Discover our vision, mission and commitment to excellence.</p>
+        </div>
 
-    <h2>Contact Us</h2>
+        <div class="about-content">
 
-    <p>
-        Department of Computer Science<br>
-        XYZ University<br>
-        Jaipur, Rajasthan<br>
-        Email: cs@xyzuniversity.edu
-    </p>
+            <div class="about-text">
 
-    <hr>
+                <h3>Building Tomorrow's Technology Leaders</h3>
 
-    <center>
-        <p>© 2026 XYZ University</p>
-    </center>
+                <p>
+                    The Department of Computer Science at XYZ University
+                    provides quality education in computer science and
+                    information technology.
+                </p>
+
+                <p>
+                    Our department focuses on programming, software
+                    development, database management, artificial
+                    intelligence and modern computing technologies.
+                </p>
+
+                <p>
+                    We encourage students to develop technical knowledge,
+                    problem-solving abilities, creativity and professional
+                    skills through practical learning.
+                </p>
+
+            </div>
+
+            <div class="about-box">
+
+                <h3>Our Vision</h3>
+
+                <p>
+                    To become a leading center of computer science education
+                    by developing skilled professionals, encouraging
+                    innovation and creating future technology leaders.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROGRAMS SECTION -->
+<section class="programs" id="programs">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Academic Programs</h2>
+            <p>Choose the right program to build your career in technology.</p>
+        </div>
+
+        <div class="program-grid">
+
+            <div class="program-card">
+                <h3>BCA</h3>
+                <p>
+                    Bachelor of Computer Applications focuses on
+                    programming, databases and computer applications.
+                </p>
+            </div>
+
+            <div class="program-card">
+                <h3>MCA</h3>
+                <p>
+                    Master of Computer Applications develops advanced
+                    knowledge of software and computing technologies.
+                </p>
+            </div>
+
+            <div class="program-card">
+                <h3>B.Tech CS</h3>
+                <p>
+                    Computer Science Engineering provides knowledge
+                    of software, hardware and modern technologies.
+                </p>
+            </div>
+
+            <div class="program-card">
+                <h3>M.Tech CS</h3>
+                <p>
+                    Advanced postgraduate program focusing on research,
+                    development and specialized computing skills.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FACULTY SECTION -->
+<section id="faculty">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Our Faculty Members</h2>
+            <p>Meet our experienced and dedicated academic team.</p>
+        </div>
+
+        <div class="faculty-grid">
+
+            <div class="faculty-card">
+
+                <img
+                    src="https://placehold.co/150x150/155eef/ffffff?text=AS"
+                    alt="Dr. Amit Sharma">
+
+                <h3>Dr. Amit Sharma</h3>
+
+                <p>Artificial Intelligence</p>
+
+            </div>
+
+
+            <div class="faculty-card">
+
+                <img
+                    src="https://placehold.co/150x150/155eef/ffffff?text=NV"
+                    alt="Dr. Neha Verma">
+
+                <h3>Dr. Neha Verma</h3>
+
+                <p>Data Science</p>
+
+            </div>
+
+
+            <div class="faculty-card">
+
+                <img
+                    src="https://placehold.co/150x150/155eef/ffffff?text=RS"
+                    alt="Mr. Rahul Singh">
+
+                <h3>Mr. Rahul Singh</h3>
+
+                <p>Computer Networks</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- NOTICES SECTION -->
+<section class="notices" id="notices">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Latest Notices & Announcements</h2>
+            <p>Stay updated with department activities and announcements.</p>
+        </div>
+
+        <div class="notice-list">
+
+            <div class="notice-item">
+
+                <h3>📢 Admission Open</h3>
+
+                <p>
+                    Applications are invited for admission to various
+                    Computer Science programs.
+                </p>
+
+            </div>
+
+
+            <div class="notice-item">
+
+                <h3>💻 Technical Workshop</h3>
+
+                <p>
+                    A technical workshop on modern computer technologies
+                    will be organized by the department.
+                </p>
+
+            </div>
+
+
+            <div class="notice-item">
+
+                <h3>🎓 Student Development Program</h3>
+
+                <p>
+                    Students are encouraged to participate in academic
+                    activities, seminars and skill development programs.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Contact Our Department</h2>
+            <p>Have questions? Get in touch with our department.</p>
+        </div>
+
+        <div class="contact-content">
+
+            <div class="contact-info">
+
+                <h3>Get In Touch</h3>
+
+                <p>
+                    📍 XYZ University, Jaipur, Rajasthan, India
+                </p>
+
+                <p>
+                    📧 cs@xyzuniversity.edu
+                </p>
+
+                <p>
+                    🏛 Department of Computer Science
+                </p>
+
+                <p>
+                    🕒 Monday - Saturday
+                </p>
+
+            </div>
+
+
+            <form class="contact-form" id="contactForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your Full Name"
+                    required>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Your Email Address"
+                    required>
+
+                <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Subject"
+                    required>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Write Your Message"
+                    required></textarea>
+
+                <button type="submit">
+                    Send Message →
+                </button>
+
+                <p id="formFeedback" class="form-feedback"></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="container">
+
+        <p>
+            © <span id="year"></span>
+            Department of Computer Science, XYZ University.
+            All Rights Reserved.
+        </p>
+
+        <p>
+            Designed for Education | Innovation | Technology
+        </p>
+
+    </div>
+
+</footer>
+```
 
 </body>
 </html>
